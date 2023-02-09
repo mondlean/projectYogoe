@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    int playerSpeed = 5;
+    int playerSpeed = 5;//플레이어 스피드 기본값
     Rigidbody2D rid2d;
-
+    int playerBulletCount = 10;
+    public GameObject PlyerBullet;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class PlayerControl : MonoBehaviour
     }
 
 
-    void PlayerMove()
+    void PlayerMove()//플레이어 이동
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
@@ -48,8 +49,17 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    void playershot()
-    {
+    void playershot()// 공격 모션
+    {//총알은 Z키로 발사하며 C키로 재장전
+        if (Input.GetKey(KeyCode.Z))//총알 발사 
+        {
+            if (playerBulletCount > 0) 
+            {
+
+            }
+        }
+
         
+
     }
 }
