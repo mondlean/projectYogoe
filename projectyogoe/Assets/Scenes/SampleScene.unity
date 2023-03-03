@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10.782203
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 536458277}
   - component: {fileID: 536458276}
+  - component: {fileID: 536458278}
   - component: {fileID: 536458275}
   m_Layer: 0
   m_Name: Circle
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 536458274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1432ca93464ab34ebdf6230f81c2a23, type: 3}
+  m_Script: {fileID: 11500000, guid: a86eb45961c1ace4f81080e50164ffc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlyerBullet: {fileID: 0}
@@ -296,12 +297,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536458274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.76, y: 0.27, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &536458278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536458274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86eb45961c1ace4f81080e50164ffc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlyerBullet: {fileID: 0}
 --- !u!1 &1347810322
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347810322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.552419, y: 0.08064516, z: 0}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
