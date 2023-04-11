@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Bullet_Move.cs" />
+    <Compile Include="Assets\Script\ChamMoving.cs" />
     <Compile Include="Assets\Script\playerController.cs" />
     <Compile Include="Assets\Script\CicleShot.cs" />
   </ItemGroup>

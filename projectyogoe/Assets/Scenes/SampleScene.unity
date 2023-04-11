@@ -217,27 +217,13 @@ GameObject:
   - component: {fileID: 536458277}
   - component: {fileID: 536458276}
   - component: {fileID: 536458278}
-  - component: {fileID: 536458275}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: playertest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &536458275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536458274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a86eb45961c1ace4f81080e50164ffc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlyerBullet: {fileID: 0}
 --- !u!212 &536458276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -316,6 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlyerBullet: {fileID: 0}
+  PlyaerDanmaku: {fileID: 902072287491392294, guid: ea5bcfb73f753d747bbacab9969642de, type: 3}
 --- !u!1 &1347810322
 GameObject:
   m_ObjectHideFlags: 0
