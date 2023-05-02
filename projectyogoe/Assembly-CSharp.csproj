@@ -60,6 +60,13 @@
     <Compile Include="Assets\Script\ChamMoving.cs" />
     <Compile Include="Assets\Script\playerController.cs" />
     <Compile Include="Assets\Script\CicleShot.cs" />
+    <Compile Include="Assets\Script\PlayerBulleCount.cs" />
+    <Compile Include="Assets\Free Pixel Art Forest\Demo\MoveBackground.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Free Pixel Art Forest\Contact.txt" />
+    <None Include="Assets\Free Pixel Art Forest\Lisense.txt" />
+    <None Include="Assets\Free Pixel Art Forest\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
