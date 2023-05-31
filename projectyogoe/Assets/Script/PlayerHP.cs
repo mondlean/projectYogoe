@@ -5,28 +5,40 @@ using UnityEngine;
 public class PlayerHP : MonoBehaviour
 {
     // Start is called before the first frame update
-    int HP = 0;
-    Collision2D col;
+    public int HP = 100;
+    public Collision2D col;
+
     void Start()
     {
         HP = 100;
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        HPcontroll(col);
         HPbar();
+        
+
 
     }
-    void HPcontroll(Collision2D col)
+
+   
+
+    void FixedUpdate()
     {
-        if(col.gameObject.tag == "Tan")
+        HPcontroll();
+    }
+
+    void HPcontroll()
+    {
+        if (col != null && col.gameObject.tag.Equals("Tan"))
         {
-            HP -= 5;
+            Debug.Log("충돌처리");
+            HP--;
         }
     }
+
+   
 
     void HPbar()
     {

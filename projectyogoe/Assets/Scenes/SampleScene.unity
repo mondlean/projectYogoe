@@ -794,6 +794,9 @@ GameObject:
   - component: {fileID: 536458277}
   - component: {fileID: 536458276}
   - component: {fileID: 536458278}
+  - component: {fileID: 536458275}
+  - component: {fileID: 536458279}
+  - component: {fileID: 536458280}
   m_Layer: 0
   m_Name: playertest
   m_TagString: Untagged
@@ -801,6 +804,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &536458275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536458274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2137dcd76a293e645abf80f06b2e69e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
 --- !u!212 &536458276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -882,6 +898,43 @@ MonoBehaviour:
   PlyerBullet: {fileID: 0}
   PlyaerDanmaku: {fileID: 6016788188793876983, guid: ea5bcfb73f753d747bbacab9969642de, type: 3}
   Bulletcylinder: {fileID: 2856047191618400423}
+--- !u!58 &536458279
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536458274}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!50 &536458280
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536458274}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &537528781
 GameObject:
   m_ObjectHideFlags: 0
