@@ -6,7 +6,7 @@ public class PlayerHP : MonoBehaviour
 {
     // Start is called before the first frame update
     public int HP = 100;
-    public Collision2D col;
+   
 
     void Start()
     {
@@ -17,28 +17,31 @@ public class PlayerHP : MonoBehaviour
     void Update()
     {
         HPbar();
+
+
         
-
-
     }
 
-   
+    
 
-    void FixedUpdate()
-    {
-        HPcontroll();
-    }
+
 
     void HPcontroll()
     {
-        if (col != null && col.gameObject.tag.Equals("Tan"))
+        Debug.Log("面倒贸府");
+        HP--;
+        Debug.Log(HP);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log(col.gameObject.tag);
+        if (col.gameObject.CompareTag("Tan"))
         {
-            Debug.Log("面倒贸府");
-            HP--;
+            HPcontroll();
         }
     }
 
-   
 
     void HPbar()
     {
