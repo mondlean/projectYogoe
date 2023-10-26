@@ -33,10 +33,10 @@ public class PlayerHP : MonoBehaviour
         Debug.Log(HP);
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log(col.gameObject.tag);
-        if (col.gameObject.CompareTag("Tan"))
+        if (col.gameObject.tag =="Tan")
         {
             HPcontroll();
         }
